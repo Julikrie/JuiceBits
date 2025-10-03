@@ -24,12 +24,12 @@
         {
             "displayName": "2D Demo",
             "description": "Demo scene to demonstrate the package in 2D",
-            "path": "Samples/Demo 2D"
+            "path": "Samples~/Demo 2D"
         },
         {
             "displayName": "3D Demo",
             "description": "Demo scene to demonstrate the package in 3D",
-            "path": "Samples/Demo 3D"
+            "path": "Samples~/Demo 3D"
         }
     ]
 }
