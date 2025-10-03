@@ -3,8 +3,7 @@
     "rootNamespace": "JuiceBits",
     "references": [
         "GUID:d919c191f35671c409ed5b4217bd31bd",
-        "GUID:0ae5e693bbacc484db7682ec537fdbd5",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+        "GUID:0ae5e693bbacc484db7682ec537fdbd5"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

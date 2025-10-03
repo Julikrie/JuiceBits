@@ -1,11 +1,11 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 namespace JuiceBits
 {
     public class GameManager3D : MonoBehaviour
     {
-        public TMP_Text StartText;
+        public Text StartText;
 
         private void Update()
         {

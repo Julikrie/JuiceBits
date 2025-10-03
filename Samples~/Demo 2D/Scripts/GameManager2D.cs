@@ -1,12 +1,12 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 namespace JuiceBits
 {
     public class GameManager2D : MonoBehaviour
     {
-        public TMP_Text ScoreText;
-        public TMP_Text StartText;
+        public Text ScoreText;
+        public Text StartText;
         private int _pointsPerSecond = 10;
         private int _currentScore = 0;
         private float _timer;
