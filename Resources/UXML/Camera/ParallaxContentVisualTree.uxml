@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/RemoveButtonStyle.uss?fileID=7433441132597879392&amp;guid=91dee31d9a10e3a43b4ca565da6c8714&amp;type=3#RemoveButtonStyle" />
+    <ui:Foldout text="Parallax" name="ParallaxFoldout" style="-unity-font-style: bold;">
+        <ui:TextField label="Name" placeholder-text="filler text" name="Name" />
+        <uie:ObjectField label="Layer" name="ParallaxLayer" type="UnityEngine.Transform, UnityEngine.CoreModule" />
+        <ui:Vector2Field label="Speed" name="Speed" />
+        <ui:Button text="Remove Module" name="RemoveModule" />
+    </ui:Foldout>
+</ui:UXML>

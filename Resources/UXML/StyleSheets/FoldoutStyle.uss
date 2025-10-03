@@ -1,0 +1,15 @@
+.border {
+    border-top-width: 5px;
+    border-left-color: rgb(107, 255, 122);
+    border-right-color: rgb(107, 255, 122);
+    border-top-color: rgb(107, 255, 122);
+    border-bottom-color: rgb(107, 255, 122);
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-right: 0;
+}

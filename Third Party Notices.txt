@@ -1,0 +1,13 @@
+This package contains third-party software components governed by the license(s) indicated below:
+
+Component Name: 2D Endless Runner Assets | Certification Courseware
+
+License Type: "Unity Companion License"
+
+[2D Endless Runner Assets | Certification Courseware](https://unity.com/legal/licenses/unity-companion-license)
+
+Component Name: Tanks! | Complete Project
+
+License Type: "Unity Companion License"
+
+[Tanks! | Complete Project](https://unity.com/legal/licenses/unity-companion-license)

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 5408f7512c2d73944a9fff8981a95a76
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - VisualTreePlayer: {fileID: 9197481963319205126, guid: 8771ae35153daec4e80a93caf5b4ed16, type: 3}
+  - VisualTreeShake: {fileID: 9197481963319205126, guid: fe882111b1152f2428363425d6c0384c, type: 3}
+  - VisualTreeFade: {fileID: 9197481963319205126, guid: 77eef5e583110dd4c9d7758d2f9e16ee, type: 3}
+  - VisualTreeFlash: {fileID: 9197481963319205126, guid: a326dc890cf0f204182815044d07c679, type: 3}
+  - VisualTreeZoom: {fileID: 9197481963319205126, guid: 3f9df7ba51197b746905005c2ed0f287, type: 3}
+  - VisualTreeOffset: {fileID: 9197481963319205126, guid: e41cd424db455d94884c4515af1f8075, type: 3}
+  - VisualTreeTimeStop: {fileID: 9197481963319205126, guid: c8275871f2ada1844aa747a7a395980e, type: 3}
+  - VisualTreeTimeScale: {fileID: 9197481963319205126, guid: 1841578cf25ce2840a283598c30ac5d3, type: 3}
+  - VisualTreeAfterImage2D: {fileID: 9197481963319205126, guid: ca0b9384d13220c49b63e86b2094eb27, type: 3}
+  - VisualTreeAfterImage3D: {fileID: 9197481963319205126, guid: 9eee7551796543649803758e3e8fea13, type: 3}
+  - VisualTreeHitFeedback: {fileID: 9197481963319205126, guid: d9828a61ff33a4c4c8cadc4f51e18710, type: 3}
+  - VisualTreeParticleScene: {fileID: 9197481963319205126, guid: 2ad3a767299373740acb1156e2677eba, type: 3}
+  - VisualTreeParticleInstantiate: {fileID: 9197481963319205126, guid: 381c031dfc2bc3d449698ca943b805ed, type: 3}
+  - VisualTreeParallax: {fileID: 9197481963319205126, guid: 4fe3b27d740f08d40a4bb9fa2bc7dad1, type: 3}
+  - VisualTreeParallaxContent: {fileID: 9197481963319205126, guid: 044e17b55c9d1884584046270d38e994, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

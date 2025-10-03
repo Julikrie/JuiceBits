@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/FoldoutStyle.uss?fileID=7433441132597879392&amp;guid=35cce4ee79051bb4a8f3a2d4cd7e5328&amp;type=3#FoldoutStyle" />
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/RemoveButtonStyle.uss?fileID=7433441132597879392&amp;guid=91dee31d9a10e3a43b4ca565da6c8714&amp;type=3#RemoveButtonStyle" />
+    <ui:VisualElement name="InformationRow" class="border" style="flex-grow: 1; flex-direction: row; align-items: auto; margin-top: 0; -unity-font-style: bold; font-size: 12px;">
+        <ui:Label tabindex="-1" text="Fade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ModuleName" style="flex-basis: 0; flex-shrink: 60; margin-top: 6px; border-bottom-width: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); width: 58px; border-top-width: 0; border-right-width: 0; border-left-width: 0; border-top-left-radius: 0; -unity-font-style: bold; font-size: 14px;" />
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DelayInfo" class="position" style="-unity-font-style: bold; left: 380px; font-size: 14px; color: rgb(107, 255, 122);" />
+    </ui:VisualElement>
+    <ui:Foldout text="Fade" name="MainFoldout" value="true" toggle-on-label-click="true" style="-unity-font-style: bold;">
+        <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="FadeName" style="border-top-color: rgb(255, 173, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-left-color: rgb(255, 173, 0); border-right-color: rgb(255, 173, 0); border-bottom-color: rgb(255, 173, 0); border-left-width: 0; margin-top: 0;" />
+        <ui:VisualElement name="StopRow" style="flex-grow: 1; flex-direction: row;">
+            <ui:TextField picking-mode="Ignore" label="Stop ID" value="filler text" name="ID" tooltip="String to StopModuleByID" style="width: auto; flex-direction: row; flex-basis: 71%; flex-shrink: 0;" />
+            <ui:Toggle label="Until Stopped" name="RunningUntilStopped" tooltip="Runs forever, until stopped with Stop-ID" style="-unity-text-align: upper-center; width: auto; flex-wrap: nowrap; flex-direction: row; flex-shrink: 0; flex-grow: 0; flex-basis: auto;" />
+        </ui:VisualElement>
+        <ui:Foldout text="EXTRAS" name="Extras">
+            <ui:Foldout text="Delay" name="DelayFoldout">
+                <ui:FloatField label="Start Delay" value="0" name="StartDelay" />
+            </ui:Foldout>
+            <ui:Foldout text="Probability" name="ProbabilityFoldout">
+                <ui:FloatField label="Probabilty" value="42,2" name="Probability" tooltip="Probability of execution" />
+            </ui:Foldout>
+            <ui:Foldout text="Repetition" name="RepetitionFoldout" toggle-on-label-click="true">
+                <ui:IntegerField label="Repetitions" value="0" name="Repetitions" tooltip="Amount of repetitions" />
+                <ui:FloatField label="Repetition Delay" value="0" name="RepetitionDelay" />
+            </ui:Foldout>
+        </ui:Foldout>
+        <ui:Foldout text="SETTINGS" name="Settings" style="-unity-font-style: bold;">
+            <ui:IntegerField label="Sorting Order" value="42" name="FadeOrder" />
+            <ui:Toggle label="Use curve" name="UseCurve" />
+            <ui:EnumField label="Ease Presets" type="UnityEngine.TextAlignment, UnityEngine.TextRenderingModule" value="Center" name="FadeEasePresets" binding-path="Easing" />
+            <uie:CurveField label="Custom Curve" name="AnimationCurve" />
+            <ui:EnumField label="Fade Type" type="UnityEngine.TextAlignment, UnityEngine.TextRenderingModule" value="Center" name="FadeType" />
+            <uie:ColorField label="Color" value="RGBA(0.000, 1.000, 1.000, 1.000)" name="FadeColor" />
+            <ui:FloatField label="Duration" value="42,2" name="FadeDuration" tooltip="Duration of the Fade" style="justify-content: center; width: 177px;" />
+        </ui:Foldout>
+    </ui:Foldout>
+    <ui:Button text="Remove" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemoveButton" class="padding" />
+</ui:UXML>

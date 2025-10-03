@@ -1,0 +1,24 @@
+{
+  "name": "dev.kriegel.juicebits",
+  "version": "1.0.0",
+  "displayName": "JuiceBits",
+  "description": "JuiceBits lets the User implement Camera and Particle Juice with an easy to use Modular System",
+  "unity": "6.0",
+  "unityRelease": "058f2",
+  "dependencies": {
+    "com.Unity.Cinemachine": "3.1.4"
+  },
+  "keywords": [
+    "Feel",
+    "Juice",
+    "Camera",
+    "Particle",
+    "Bits",
+    "Effects"
+  ],
+  "author": {
+    "name": "Julian Kriegel",
+    "email": "gamedev.kriegel@gmail.com",
+    "url": "https://gamedev.kriegel.dev/"
+  }
+}

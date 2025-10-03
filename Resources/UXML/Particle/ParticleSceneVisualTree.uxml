@@ -1,0 +1,68 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/FoldoutStyle.uss?fileID=7433441132597879392&amp;guid=35cce4ee79051bb4a8f3a2d4cd7e5328&amp;type=3#FoldoutStyle" />
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/RemoveButtonStyle.uss?fileID=7433441132597879392&amp;guid=91dee31d9a10e3a43b4ca565da6c8714&amp;type=3#RemoveButtonStyle" />
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/ListStyle.uss?fileID=7433441132597879392&amp;guid=790b5dfbce60103479d6dbd11ae191d2&amp;type=3#ListStyle" />
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/RandomizerStyle.uss?fileID=7433441132597879392&amp;guid=d5a561d90e54efc408d230259cee19c0&amp;type=3#RandomizerStyle" />
+    <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/LabelStyle.uss?fileID=7433441132597879392&amp;guid=e9d967b264602ec40a213463a96d71cb&amp;type=3#LabelStyle" />
+    <ui:VisualElement name="InformationRow" class="border" style="flex-grow: 1; flex-direction: row; align-items: auto; margin-top: 0;">
+        <ui:Label tabindex="-1" text="Particle Scene" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ModuleName" style="flex-basis: 0; flex-shrink: 60; margin-top: 6px; border-bottom-width: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); width: 58px; border-top-width: 0; border-right-width: 0; border-left-width: 0; border-top-left-radius: 0; -unity-font-style: bold; font-size: 14px;" />
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DelayInfo" style="-unity-font-style: bold; left: 380px; font-size: 14px; color: rgb(107, 255, 122);" />
+    </ui:VisualElement>
+    <ui:Foldout text="Particle Scene" name="MainFoldout" style="-unity-background-image-tint-color: rgba(0, 0, 0, 0); background-color: rgba(255, 255, 255, 0); -unity-font-style: bold; margin-top: 0;">
+        <ui:TextField picking-mode="Ignore" label="Name" value="filler text" name="Name" />
+        <ui:TextField picking-mode="Ignore" label="Stop ID" value="filler text" name="ID" />
+        <ui:Foldout text="EXTRAS" name="Extras">
+            <ui:Foldout text="Delay" name="DelayFoldout">
+                <ui:FloatField label="Start Delay" value="0" name="StartDelay" />
+            </ui:Foldout>
+            <ui:Foldout text="Probability" name="ProbabilityFoldout">
+                <ui:FloatField label="Probabilty" value="42,2" name="Probability" tooltip="Probability of execution" />
+            </ui:Foldout>
+            <ui:Foldout text="Repetition" name="RepetitionFoldout" toggle-on-label-click="true">
+                <ui:IntegerField label="Repetitions" value="0" name="Repetitions" tooltip="Amount of repetitions" />
+                <ui:FloatField label="Repetition Delay" value="0" name="RepetitionDelay" />
+            </ui:Foldout>
+        </ui:Foldout>
+        <ui:Foldout text="&lt;b&gt;Settings&lt;/b&gt;" name="Settings">
+            <uie:ObjectField label="Target" name="Target" />
+            <ui:ListView name="ParticleList" header-title="ParticleList" show-foldout-header="true" reorderable="true" reorder-mode="Animated" show-add-remove-footer="true" />
+            <ui:Toggle label="Set As Parent" name="SetAsParent" />
+            <ui:Toggle label="Position of Parent" name="SamePosition" />
+            <ui:Vector3Field label="Offset" name="Offset" />
+            <ui:Foldout text="Randomizer" name="RandomizerFoldout">
+                <ui:Toggle label="Use Randomizer" name="Randomizer" style="margin-bottom: 0;" />
+                <ui:Label tabindex="-1" text="Emission" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Emission" class="margin" style="margin-top: 10px;">
+                    <ui:FloatField label="Min Emission" value="0" name="MinEmissionRate" class="margin" />
+                    <ui:FloatField label="Max Emission" value="42,2" name="MaxEmissionRate" />
+                </ui:Label>
+                <ui:Label tabindex="-1" text="Duration" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Duration" class="margin">
+                    <ui:FloatField label="Min Duration" value="0" name="MinDuration" class="margin" />
+                    <ui:FloatField label="Max Duration" value="0" name="MaxDuration" />
+                </ui:Label>
+                <ui:Label tabindex="-1" text="Lifetime" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Lifetime" class="margin">
+                    <ui:FloatField label="Min Lifetime" value="0" name="MinLifetime" class="margin" />
+                    <ui:FloatField label="Max Lifetime" value="42,2" name="MaxLifetime" readonly="false" />
+                </ui:Label>
+                <ui:Label tabindex="-1" text="Size" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Size" class="margin">
+                    <ui:FloatField label="Min Size" value="0" name="MinSize" class="margin" />
+                    <ui:FloatField label="Max Size" value="0" name="MaxSize" />
+                </ui:Label>
+                <ui:Label tabindex="-1" text="Rotation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Rotation" class="margin">
+                    <ui:FloatField label="Min Rotation" value="0" name="MinRotation" class="margin" />
+                    <ui:FloatField label="Max Rotation" value="0" name="MaxRotation" />
+                </ui:Label>
+                <ui:ListView name="RandomColor" show-add-remove-footer="true" show-foldout-header="true" header-title="Random Color" reorderable="true" class="margin" />
+                <ui:ListView name="RandomMaterial" show-foldout-header="true" show-add-remove-footer="true" header-title="Random Material" reorderable="true" class="margin" />
+            </ui:Foldout>
+            <ui:Foldout text="&lt;b&gt;Activate/Deactivate&lt;/b&gt;" name="ActivateDeactivate">
+                <ui:Toggle label="ActivateParticle" name="ActivateParticle" />
+                <ui:FloatField label="ActivateTime" value="0" name="ActivateTime" />
+                <ui:ListView name="ActivateAtIndexList" show-foldout-header="true" header-title="Activate At Index" show-add-remove-footer="true" show-border="false" reorderable="true" reorder-mode="Animated" />
+                <ui:Toggle label="DeactivateParticle" name="DeactivateParticle" />
+                <ui:FloatField label="DeactivateTime" value="42,2" name="DeactivateTime" />
+                <ui:ListView name="DeactivateAtIndexList" show-foldout-header="true" header-title="Deactivate At Index" show-add-remove-footer="true" reorder-mode="Animated" reorderable="true" />
+            </ui:Foldout>
+        </ui:Foldout>
+    </ui:Foldout>
+    <ui:Button text="Remove" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RemoveButton" class="padding positionAtEndOfList" />
+</ui:UXML>

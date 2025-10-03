@@ -1,0 +1,12 @@
+.position {
+    left: 380px;
+    color: rgb(107, 255, 122);
+    font-size: 14px;
+    -unity-font-style: bold;
+    white-space: nowrap;
+    padding-top: 0;
+    padding-right: 2px;
+    padding-bottom: 0;
+    padding-left: 1px;
+    flex-shrink: 9;
+}
