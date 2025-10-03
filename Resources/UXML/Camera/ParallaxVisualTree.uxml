@@ -3,7 +3,7 @@
     <Style src="project://database/Assets/JuiceBits/Resources/UXML/StyleSheets/RemoveButtonStyle.uss?fileID=7433441132597879392&amp;guid=91dee31d9a10e3a43b4ca565da6c8714&amp;type=3#RemoveButtonStyle" />
     <ui:Label text="Parallax" name="Parallax" class="border" style="-unity-font-style: bold; font-size: 16px;" />
     <ui:Foldout text="Parallax" name="MainFoldout" style="-unity-font-style: bold;">
-        <ui:ListView name="ParallaxList" show-add-remove-footer="true" allow-remove="true" allow-add="true" reorderable="true" virtualization-method="DynamicHeight" data-source-type="ParallaxModule, Assembly-CSharp" binding-source-selection-mode="Manual" horizontal-scrolling="false" show-foldout-header="false" reorder-mode="Animated" fixed-item-height="22" show-border="false" header-title="Parallax" show-bound-collection-size="true" style="height: auto; -unity-font-style: bold;" />
+        <ui:ListView name="ParallaxList" show-add-remove-footer="true" allow-remove="true" allow-add="true" reorderable="true" virtualization-method="DynamicHeight" binding-source-selection-mode="Manual" horizontal-scrolling="false" show-foldout-header="false" reorder-mode="Animated" fixed-item-height="22" show-border="false" header-title="Parallax" show-bound-collection-size="true" style="height: auto; -unity-font-style: bold;" />
     </ui:Foldout>
     <ui:Button text="Remove" name="RemoveButton" selectable="false" class="margin positionAtEndOfList" />
 </ui:UXML>

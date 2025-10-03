@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace JuiceBits
 {
-    public partial class ParallaxModule : ModuleBase
+    public class ParallaxModule : ModuleBase
     {
         public List<Parallax> ParallaxList = new List<Parallax>();
 
