@@ -30,9 +30,8 @@ namespace JuiceBits
 
             // Creates the List for the parallax
             parallaxList.itemsSource = _module.ParallaxList;
+            parallaxList.itemTemplate = _parallaxContent;
             parallaxList.selectionType = SelectionType.Single;
-
-            parallaxList.makeItem = () => _parallaxContent.CloneTree();
 
             parallaxList.bindItem = (parallaxContent, index) =>
             {
@@ -57,7 +56,7 @@ namespace JuiceBits
                 speed.tooltip = "The moving speed of the Parallax. Only choose X-Speed or Y-Speed, not both at the same time";
 
                 // Saves the open/closed state of the folodut
-                parallaxFoldout.value = parallax.IsOpen;
+                parallaxFoldout.value = true;
                 mainFoldout.value = _module.IsMainOpen;
                 parallaxFoldout.RegisterValueChangedCallback(parallaxFoldout => parallax.IsOpen = parallaxFoldout.newValue);
                 mainFoldout.RegisterValueChangedCallback(mainFoldout => _module.IsMainOpen = mainFoldout.newValue);
