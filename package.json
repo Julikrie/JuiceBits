@@ -28,7 +28,7 @@
         },
         {
             "displayName": "3D Demo",
-            "description": "Demo scene to demonstrate the package in 3D",
+            "description": "Demo scene to demonstrate the package in 3D using URP",
             "path": "Samples~/Demo 3D"
         }
     ]
