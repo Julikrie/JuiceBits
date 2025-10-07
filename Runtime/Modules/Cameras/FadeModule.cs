@@ -44,11 +44,6 @@ namespace JuiceBits
             AnimationCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Executes the logic of the fade module
         public override void Play()
         {

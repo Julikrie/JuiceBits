@@ -54,11 +54,6 @@ namespace JuiceBits
             }
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Executes the hit feedback
         public override void Play()
         {

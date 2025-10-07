@@ -105,7 +105,6 @@ namespace JuiceBits
             repetitionDelay.RegisterValueChangedCallback(repetitionDelay => _module.RepeatDelay = repetitionDelay.newValue);
 
             animationCurve.style.display = _module.UseCurve ? DisplayStyle.Flex : DisplayStyle.None;
-
             startScale.style.display = _module.TimeScaleInstantly || _module._runningUntilStopped ? DisplayStyle.None : DisplayStyle.Flex;
             endScale.style.display = _module.TimeScaleInstantly || _module._runningUntilStopped ? DisplayStyle.None : DisplayStyle.Flex;
             timeScale.style.display = _module.TimeScaleInstantly || _module._runningUntilStopped ? DisplayStyle.Flex : DisplayStyle.None;

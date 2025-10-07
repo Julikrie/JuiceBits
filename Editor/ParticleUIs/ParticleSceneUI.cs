@@ -138,6 +138,7 @@ namespace JuiceBits
                     _module.ActivateAtIndex[i] = index.newValue;
                 });
             };
+
             activateList.selectionType = SelectionType.None;
 
             deactivateList.itemsSource = _module.DeactivateAtIndex;
@@ -152,6 +153,7 @@ namespace JuiceBits
                     _module.DeactivateAtIndex[i] = index.newValue;
                 });
             };
+
             deactivateList.selectionType = SelectionType.None;
 
             randomColor.itemsSource = _module.Randomizer.RandomColor;

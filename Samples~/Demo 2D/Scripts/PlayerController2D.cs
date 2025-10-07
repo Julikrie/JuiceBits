@@ -16,7 +16,6 @@ namespace JuiceBits
         public ModuleHandler CollisionEffects;
 
         private float _originalGravity;
-        [SerializeField]
         private bool _isGrounded;
         private bool _hasIncreasedGravity = false;
         private Rigidbody2D _rb;

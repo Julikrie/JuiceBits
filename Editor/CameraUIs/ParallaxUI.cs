@@ -65,6 +65,7 @@ namespace JuiceBits
                     parallax.Name = name.newValue;
                     parallaxFoldout.text = parallax.Name;
                 });
+
                 parallaxLayer.RegisterValueChangedCallback(parallaxLayer => parallax.Layer = (Transform)parallaxLayer.newValue);
                 speed.RegisterValueChangedCallback(speed => parallax.LayerSpeed = speed.newValue);
 
@@ -87,6 +88,7 @@ namespace JuiceBits
                     Layer = null,
                     LayerSpeed = Vector2.zero
                 });
+
                 view.RefreshItems();
                 view.ScrollToItem(itemsSourceCount);
             };

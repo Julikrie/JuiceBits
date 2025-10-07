@@ -12,16 +12,6 @@ namespace JuiceBits
         private Coroutine _coroutine;
         private Coroutine _repeatingCoroutine;
 
-        public override void Initialize(GameObject targetObject)
-        {
-
-        }
-
-        public override void Update()
-        {
-
-        }
-
         // Executes the time stop
         public override void Play()
         {

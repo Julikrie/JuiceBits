@@ -42,11 +42,6 @@ namespace JuiceBits
             FadeCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Executes the afterimage 2D
         public override void Play()
         {

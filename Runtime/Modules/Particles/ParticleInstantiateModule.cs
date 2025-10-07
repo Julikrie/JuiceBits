@@ -81,11 +81,6 @@ namespace JuiceBits
             }
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Creates the particle
         private void CreateParticle()
         {

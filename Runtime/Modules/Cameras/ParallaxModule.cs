@@ -12,19 +12,19 @@ namespace JuiceBits
         public class Parallax
         {
             [SerializeField]
-            public bool IsOpen;
-            [SerializeField]
             public string Name = "Parallax";
             public Transform Layer;
-            public Vector2 LayerSpeed;
-            [HideInInspector]
-            public float LayerWidth;
-            [HideInInspector]
-            public float LayerHeight;
             [HideInInspector]
             public Transform LayerDuplicateWidth;
             [HideInInspector]
             public Transform LayerDuplicateHeight;
+            [HideInInspector]
+            public float LayerWidth;
+            [HideInInspector]
+            public float LayerHeight;
+            public Vector2 LayerSpeed;
+            [SerializeField]
+            public bool IsOpen;
         }
 
         public override void Initialize(GameObject targetObject)
@@ -47,16 +47,11 @@ namespace JuiceBits
                     minHeight = Mathf.Min(minHeight, b.min.y);
                     maxHeight = Mathf.Max(maxHeight, b.max.y);
                 }
-                
+
                 // Calculating the Width and Height of the Parallax
                 parallax.LayerWidth = maxWidth - minWidth;
                 parallax.LayerHeight = maxHeight - minHeight;
             }
-        }
-
-        public override void Update()
-        {
-
         }
 
         public override void Play()

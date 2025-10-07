@@ -46,11 +46,6 @@ namespace JuiceBits
             }
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Executes the Particle Scene logic
         public override void Play()
         {

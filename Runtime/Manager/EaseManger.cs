@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace JuiceBits
 {
-    // Collection of Easing Functions from the easings.net website
+    // Collection of Easing Functions from the https://easings.net/ website
     public static class EaseManger
     {
         public static float Easings(EaseTypes easeTypes, float time)
@@ -16,7 +16,7 @@ namespace JuiceBits
             float n1 = 7.5625f;
             float d1 = 2.75f;
 
-            // Adds easing functions to the ease tpes
+            // Adds easing functions to the ease types
             switch (easeTypes)
             {
                 case EaseTypes.Linear:

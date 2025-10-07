@@ -21,20 +21,10 @@ namespace JuiceBits
         private Coroutine _repeatingCoroutine;
         private Coroutine _easeCoroutine;
 
-        public override void Initialize(GameObject targetObject)
-        {
-
-        }
-
         // Sets the default value of the animation curve to linear
         private void Reset()
         {
             AnimationCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
-        }
-
-        public override void Update()
-        {
-
         }
 
         // Executes the time scale logic

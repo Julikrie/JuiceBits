@@ -164,7 +164,6 @@ namespace JuiceBits
             usePooling.RegisterValueChangedCallback(usePooling => _module.UsePooling = usePooling.newValue);
             defaultCapacity.RegisterValueChangedCallback(defaultCapacity => _module.DefaultCapacity = defaultCapacity.newValue);
             maxCapacity.RegisterValueChangedCallback(maxCapacity => _module.MaxCapacity = maxCapacity.newValue);
-
             useRandomizer.RegisterValueChangedCallback(useRandomizer => _module.Randomizer.UseRandom = useRandomizer.newValue);
             minEmission.RegisterValueChangedCallback(minEmissionRate => _module.Randomizer.MinEmission = minEmissionRate.newValue);
             maxEmission.RegisterValueChangedCallback(maxEmissionRate => _module.Randomizer.MaxEmission = maxEmissionRate.newValue);

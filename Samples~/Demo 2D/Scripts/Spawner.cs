@@ -27,11 +27,6 @@ namespace JuiceBits
             InvokeRepeating("SpawnPrefab", SpawnTime, SpawnDelay);
         }
 
-        void Update()
-        {
-
-        }
-
         void SpawnPrefab()
         {
             int PartySize = Random.Range(MinPartySize, MaxPartySize + 1);

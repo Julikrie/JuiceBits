@@ -143,6 +143,7 @@ namespace JuiceBits
             isSequential.RegisterValueChangedCallback(isSequential =>
             {
                 moduleHandler.IsSequential = isSequential.newValue;
+
                 foreach (var module in moduleHandler.Modules)
                 {
                     module.IsSequential = isSequential.newValue;

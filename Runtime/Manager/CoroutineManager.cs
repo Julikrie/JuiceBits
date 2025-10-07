@@ -20,6 +20,7 @@ namespace JuiceBits
                     _instance = coroutineManager.AddComponent<CoroutineManager>();
                     DontDestroyOnLoad(coroutineManager);
                 }
+
                 return _instance;
             }
         }

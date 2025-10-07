@@ -31,11 +31,6 @@ namespace JuiceBits
             _flashImage.color = Color.clear;
         }
 
-        public override void Update()
-        {
-
-        }
-
         // Stops the flash and resets the values for a next flash
         public override void Stop()
         {

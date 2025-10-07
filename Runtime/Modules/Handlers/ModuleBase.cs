@@ -28,7 +28,10 @@ namespace JuiceBits
         }
 
         // Update method of my modules
-        public abstract void Update();
+        public virtual void Update()
+        {
+
+        }
 
         // Executes the logic of the modules
         public abstract void Play();

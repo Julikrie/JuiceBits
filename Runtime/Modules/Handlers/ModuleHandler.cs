@@ -7,10 +7,11 @@ namespace JuiceBits
     public class ModuleHandler : MonoBehaviour
     {
         [SerializeField]
+        public bool IsSequential;
+
+        [SerializeField]
         private List<ModuleBase> modules = new();
         public List<ModuleBase> Modules => modules;
-        [SerializeField]
-        public bool IsSequential;
 
         private void Awake()
         {
